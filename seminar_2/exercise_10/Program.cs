@@ -1,11 +1,11 @@
-﻿Console.Write("Введите число: ");
+﻿Console.Write("Введите трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int third = 0;
+int second = 0;
 
 if (number > 100 && number < 999) {
-third = (number / 10) % 10;
-Console.Write(third);
+second = (number / 10) % 10;
+Console.Write(second);
 }
 
 else 
