@@ -1,9 +1,5 @@
 ﻿int Exponentiation (int A, int B) {
-    int result = 0;
-    int i;
-    for (i = B; i == B; i++) {
-        result = Convert.ToInt32(Math.Pow(A, B));
-    }
+    int result = Convert.ToInt32(Math.Pow(A, B));   
 return result;
 }
 
