@@ -13,22 +13,22 @@
 void PrintArray (int[,] array)
 {
     double result = 0.0;
-    int rows = array.GetLength(0);
-    int[] sum = new int[rows];
+    // int rows = array.GetLength(0);
+    double[] sum = new double[array.GetLength(0)];
     for (int i = 0; i < array.GetLength(0); i++) 
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            sum[i] += array[j,i];
-            Console.WriteLine("Сумма = " + sum[i]);
+            sum[j] += array[i,j];
+            Console.WriteLine("Сумма = " + sum[j]);
         }
     }
     Console.WriteLine();
     
 
-    for (int k = 0; k < rows; k++)
+    for (int k = 0; k < array.GetLength(0); k++)
     {
-        result = sum[k] / rows;
+        result = sum[k] / array.GetLength(0);
         Console.Write(result + ", ");
     }
 }
